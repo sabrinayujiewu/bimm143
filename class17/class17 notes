@@ -1,0 +1,34 @@
+My notes for class17 
+
+pwd: print working directory
+curl or wget: get websites/url
+ssh: open a secure shell on another computer (login_)
+#ssh [-i keyfile] username@computername
+gunzip: un zip tiles
+tar -xvf: to untar files
+cd: change dir
+* does everything
+scp: secure copy from or to a remote machine
+#scp -i keyfile username@remotecomputer:FILE2COPY NEWlocalFILE
+scp -i "~/Downloads/bimm143_sywu.pem" ubuntu@ec2-52-24-182-2.us-west-2.compute.amazonaws.com:~/*_quant . 
+
+
+The PATH is a special environment variable that stores the location of exe file in UNIX systems. I can print it with `echo $PATH`
+
+We can add it with:
+export PATH=$PATH:/my/new/path
+
+The STA-TOOLKIT allows us to query and download raw sequencing data from NCBI's SRA database. Key commands include
+
+prefetch [SRACODE]
+fastq-dump [SRACODE]
+
+
+ssh -i "~/Downloads/bimm143_sywu.pem" ubuntu@ec2-52-24-182-2.us-west-2.compute.amazonaws.com
+
+fastq-dump
+$PATH: add my new programs to $PATH
+prefetch [SRACODE]
+fastq-dump [SRACODE]
+
+nano run.sh
