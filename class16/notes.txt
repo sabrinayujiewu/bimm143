@@ -1,0 +1,13 @@
+
+This is a simple text editor called anao. 
+
+Some key unix cmds so far
+
+pwd: print working dir
+cd: change dir
+ls: list out files
+mkdir: make a new dir/folder
+nano: a basic text editor
+
+ssh -i "~/Downloads/bimm143_sywu.pem" ubuntu@ec2-54-200-192-76.us-west-2.compute.amazonaws.com
+scp -i "~/Downloads/bimm143_sywu.pem" ubuntu@ec2-54-200-192-76.us-west-2.compute.amazonaws.com:~/work/mm-second.x.zebrafish.tsv myresults.tsv
