@@ -1,14 +1,8 @@
 ---
 title: "Class12"
-author: "Sabrina Wu"
-date: "2024-11-07"
-output: gfm
+author: "Sabrina Wu (A16731683)"
+format: gfm
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 #Section 1. Propoertion of G/G in a population
 
 Downloaded a CSV file from Ensemble < https://useast.ensembl.org/Homo_sapiens/Variation/Sample?db=core;r=17:39894595-39895595;v=rs8067378;vdb=variation;vf=959672880#373531_tablePanel>
@@ -92,7 +86,6 @@ boxplot <- ggplot(expr)+ aes(x=geno, y=exp, fill=geno) +
 boxplot
 ```
 There are more A/A expression than the other two types of genotypes since the median, and quartiles are higher on the boxplot. SNP does effect the expression of ORMDL3. 
-
 
 
 
