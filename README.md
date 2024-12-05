@@ -8,7 +8,7 @@ Classwork for [BIMM143 F24](https://bioboot.github.io/bimm143_F24/) at UC San Di
 - Class 9 [Structural Bioinformatics](https://github.com/sabrinayujiewu/bimm143/blob/main/class09/class09.md)
 - Class 10 [Halloween Candy Mini-Project](https://github.com/sabrinayujiewu/bimm143/blob/main/class10/class10.md)
 - Class 11 Structural Bioinformatics pt2 AlphaFold
-- Class 12 [Genome Informatics](https://github.com/sabrinayujiewu/bimm143/blob/main/class12/class12.pdf)
+- Class 12 [Genome Informatics](https://github.com/sabrinayujiewu/bimm143/blob/main/class12/class12.md)
 - Class 13 [Transcriptomics and the analysis of RNA-Seq data](https://github.com/sabrinayujiewu/bimm143/blob/main/class13/class13.pdf)
 - Class 14 [RNA-Seq analysis mini-project](https://github.com/sabrinayujiewu/bimm143/blob/main/class14/class14.pdf)
 - Class 15 [Mini Project: Investigating Pertussis Resurgence](https://github.com/sabrinayujiewu/bimm143/blob/main/class15/class15.pdf)
