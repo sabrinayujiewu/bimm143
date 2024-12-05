@@ -1,7 +1,7 @@
 ---
 title: "Class 9: Structural Bioinformatics 1 pt.1"
 author: "Sabrina Wu (PID: A16731683)"
-format: pdf
+format: gfm
 ---
 
 The main database for structural data is caled the PDB (Protein Data Bank). Let's see what it contains:
