@@ -1,0 +1,76 @@
+---
+title: "Find A Gene Project"
+author: "Sabrina Wu (A16731683)"
+format: pdf
+---
+>[Q7] Generate a sequence identity based heatmap of your aligned sequences using R. 
+
+```{r}
+library(bio3d)
+```
+
+```{r}
+data <- read.fasta("bimm143projectseaview")
+```
+
+```{r}
+matrix <- seqidentity(data)
+```
+
+```{r}
+heatmap(matrix,margins = c(12,12))
+```
+
+>[Q8] Using R/Bio3D (or an online blast server if you prefer), search the main protein
+structure database for the most similar atomic resolution structures to your aligned
+sequences. 
+
+```{r}
+consensus<- consensus(data)
+```
+
+```{r}
+blast <- blast.pdb(consensus$seq)
+```
+
+
+```{r}
+top_hits <- head(blast$hit.tbl,n=3)
+top_hits
+```
+```{r}
+annotations <- pdb.annotate(top_hits$pdb.id)
+```
+
+```{r}
+results <- data.frame(
+  ID = top_hits$pdb.id,
+  Technique = annotations$experimentalTechnique,
+  Resolution = annotations$resolution,
+  Source = annotations$source,
+  Evalue = top_hits$evalue,
+  Identity = top_hits$identity
+)
+results
+```
+
+>Q9
+
+```{r}
+results_dir <- "project_10863_0/"
+aln_file <- list.files(path=results_dir,
+                       pattern=".a3m$",
+                        full.names = TRUE)
+aln_file
+```
+```{r}
+aln <- read.fasta(aln_file[1], to.upper = TRUE)
+sim <- conserv(aln)
+```
+```{r}
+con <- consensus(aln, cutoff = 0.5)
+con$seq
+```
+
+
+
