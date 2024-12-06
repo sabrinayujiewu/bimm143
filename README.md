@@ -17,3 +17,6 @@ Classwork for [BIMM143 F24](https://bioboot.github.io/bimm143_F24/) at UC San Di
 - Class 18 Thanksgiving
 - Class 19 Hands-on with Git and GitHub
 - Class 20 GitHub pages, online portfolio completion, GitHub Copilot plus bonus Bioinformatics in Industry
+
+#Final Project
+[Find a Gene Project](https://github.com/sabrinayujiewu/bimm143/blob/main/Find_a_Gene_Project/BIMM143Project.pdf)
