@@ -1,13 +1,13 @@
 ---
 title: "Class 8 Mini-Project: Unsupervised Learning Analysis of Human Breast Cancer Cells"
 author: "Sabrina Wu (A16731683)"
-format: pdf
+format: gfm
 ---
 ## Exploratory data analysis
 ### Importing Data
 ```{r}
 # Save your input data file into your Project directory
-fna.data <- "C:/Users/sabri/OneDrive/Desktop/BIMM 143/class08/WisconsinCancer.csv"
+fna.data <- "WisconsinCancer.csv"
 
 # Complete the following code to input the data and store as wisc.df
 wisc.df <- read.csv(fna.data, row.names=1)
