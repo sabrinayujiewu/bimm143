@@ -1,8 +1,7 @@
 ---
-title: "Machine Learning 1"
+title: "Class07 Machine Learning 1"
 author: "Sabrina Wu"
-date: "2024-10-22"
-output: gfm
+format: gfm
 ---
 
 #First up kmeans()
@@ -81,7 +80,7 @@ plot(x, col=grps)
 Read data from website and try a few visualizations.
 
 ```{r}
-url <- "C:/Users/sabri/OneDrive/Desktop/BIMM 143/class07/UK_foods.csv"
+url <- "UK_foods.csv"
 x <- read.csv(url)
 x
 ```
@@ -249,7 +248,7 @@ biplot(pca)
 
 ## PCA of RNA-seq data
 ```{r}
-url2 <- "C:/Users/sabri/OneDrive/Desktop/BIMM 143/class07/expression.csv"
+url2 <- "expression.csv"
 rna.data <- read.csv(url2, row.names=1)
 head(rna.data)
 ```
@@ -351,5 +350,3 @@ gene_score_ranked <- sort(gene_scores, decreasing=TRUE)
 top_10_genes <- names(gene_score_ranked[1:10])
 top_10_genes  
 ```
-
-
